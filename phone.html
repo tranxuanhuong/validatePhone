@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    function Phone(phone) {
+       let regexp = /^\(\d{2}\)-\(\d{9}\)$/;
+        if (regexp.test(phone)){
+            return true;
+        }
+        return false;
+    }
+    let phone = new Phone("(84)-(038489648)");
+    console.log(Phone(phone));
+    let phone1 = new Phone("(a8)-(123456789)");
+    console.log(Phone(phone1));
+</script>
+
+</body>
+</html>
